@@ -60,6 +60,17 @@ a {
 
 /* HEADER & FOOTER -------------------------------- */
 
+//MIXINS
+@mixin skewed {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 50px; 
+  position: absolute;
+  transform: skewY(-2deg);
+}
+//END MIXINS
+
 header {
   height: 460px;
   background: linear-gradient($color-bg-light, $color-bg), url('../img/bg.jpg') no-repeat;
@@ -78,12 +89,7 @@ header {
     margin: 0;
   }
   &::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 50px; 
-    position: absolute;
-    transform: skewY(-2deg);
+    @include skewed;
     background-color: $white;
     bottom: -25px;
   } 
@@ -109,12 +115,7 @@ footer {
   margin-top: 3.5em;
   position: relative; 
   &::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 50px; 
-    position: absolute;
-    transform: skewY(-2deg);
+    @include skewed;
     background-color: $color-shade;
     top: -25px;
   }
