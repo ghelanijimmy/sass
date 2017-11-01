@@ -5,7 +5,7 @@
 header {
   @include skewed {
     background-color: $white;
-    bottom: -25px;
+    bottom: -30px;
   }
   height: 460px;
   background: linear-gradient($color-bg-light, $color-bg), 
