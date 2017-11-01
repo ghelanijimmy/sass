@@ -25,7 +25,7 @@
 }
 
 // Rounded elements
-@mixin roundy($dim, $brdr) {
+@mixin roundy($dim, $brdr: null) {
   width: $dim;
   height: $dim;
   border: $brdr;
@@ -33,10 +33,15 @@
 }
 
 
-
-
-
-
-
-
-
+// Create a flex container
+@mixin flexy(
+  $disp: flex,
+  $dir: null,
+  $wrap: null,
+  $just: null
+  ){
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+}
