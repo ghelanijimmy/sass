@@ -3,3 +3,27 @@
         'partials/mixins',
         'partials/helpers',
         'partials/main-styles';
+
+$base: #00e1ff;
+$base-dark: darken($base, 25%);
+$base-light: lighten($base, 25%);
+
+$complement: complement($base);
+$complement-light: lighten($complement, 10%);
+
+header.backColor {
+  background-color: $base;
+  background-image: none;
+  h1 {
+    color: $complement;
+  }
+  p {
+    color: $base-dark;
+  }
+  .btn-callout {
+    color: $base;
+    background-color: $complement-light;
+    position: absolute;
+    margin-top: .5em;
+  }
+}

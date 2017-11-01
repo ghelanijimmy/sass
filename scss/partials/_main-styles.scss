@@ -129,7 +129,7 @@ footer {
     padding: 0.5em;
   }
   a:hover {
-    color: $color-secondary;
+    color: rgba($color-accent, 0.7);
   }
 }
 
@@ -165,6 +165,9 @@ footer {
   }
   .icon, h1 {
     color: $color-primary;
+  }
+  .material-icons {
+      color: $color-primary-light;
   }
   @media (min-width: $break-s) { 
         flex: 1;

@@ -133,7 +133,7 @@ footer {
     text-transform: uppercase;
     padding: 0.5em; }
   .main-nav a:hover {
-    color: #b13c69; }
+    color: rgba(238, 234, 114, 0.7); }
 
 .main-content {
   display: flex;
@@ -167,6 +167,8 @@ footer {
     line-height: 1.25; }
   .card .icon, .card h1 {
     color: #278da4; }
+  .card .material-icons {
+    color: #31b0cd; }
   @media (min-width: 576px) {
     .card {
       flex: 1; } }
@@ -186,5 +188,18 @@ footer {
   font-size: 0.85em;
   background-color: #278da4;
   margin-top: auto; }
+
+header.backColor {
+  background-color: #00e1ff;
+  background-image: none; }
+  header.backColor h1 {
+    color: #ff1e00; }
+  header.backColor p {
+    color: #007180; }
+  header.backColor .btn-callout {
+    color: #00e1ff;
+    background-color: #ff4b33;
+    position: absolute;
+    margin-top: .5em; }
 
 /*# sourceMappingURL=style.css.map */
