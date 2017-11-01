@@ -16,7 +16,7 @@ $font-stack-secondary: 'Bree Serif', serif;
 
 $max-width: 1000px;
 
-//MIXINS
+// MIXINS ---------------------------------------- /
 @mixin skewed {
   position: relative;
   &::after{
@@ -36,7 +36,6 @@ $max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
-//END MIXINS
 
 /* BASE ------------------------------------------- */
 
