@@ -64,3 +64,11 @@
    }
  }
 }
+
+@mixin themes($map) {
+  @each $theme, $color in $map {
+    &-#{$theme} {
+      color: $color;
+    }
+  }
+}
